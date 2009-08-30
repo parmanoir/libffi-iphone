@@ -15,6 +15,8 @@ ffi closures don't work on the iPhone, as <code>mprotect</code> is disabled.
 
 You can however retarget existing functions if you have a function pool. See [Tim Burks' post about Nu's method pool](http://stackoverflow.com/questions/219653/ruby-on-iphone), see [JSCocoa's Burks Pool](http://github.com/parmanoir/jscocoa/blob/master/JSCocoa/iPhone/BurksPool.m) for another implementation.
 
+To retarget ObjC pool methods, use the method's hidden <code>_cmd</code> argument (the current selector) and <code>[self class]</code>. This will tell you which method of which class is being called.
+
 License
 -
 **libffi-iphone** uses **libffi**'s license.
