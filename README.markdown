@@ -3,13 +3,13 @@ libffi for the iPhone
 
 **[libffi](http://sourceware.org/libffi/)** allows calling any C-function or ObjC method at runtime.
 
-**libffi-iphone** is a stripped down version of libffi, taylored just for the iPhone. **libffi-iphone** includes source code for both the iPhone simulator and the iPhone itself.
+**libffi-iphone** is a stripped down version of libffi, tailored just for the iPhone. **libffi-iphone** includes source code for both the iPhone simulator and the iPhone itself.
 
 Calling functions
 -
 Works just like libffi.
 
-Creating ffi closures, new functions runtime created and called
+Creating ffi closures, new functions created and called at runtime
 -
 ffi closures don't work on the iPhone, as <code>mprotect</code> is disabled.
 
